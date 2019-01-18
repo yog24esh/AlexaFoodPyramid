@@ -8,12 +8,12 @@ const LaunchRequestHandler = {
     return handlerInput.requestEnvelope.request.type === 'LaunchRequest';
   },
   handle(handlerInput) {
-    const speechText = 'Welcome to the the Food Pyramid skill. You can ask about the different tiers or a specific food group!';
+    const speechText = 'Welcome to the the indian spices skill. You can ask about the different spices or a specific indian spice!';
 
     return handlerInput.responseBuilder
       .speak(speechText)
       .reprompt(speechText)
-      .withSimpleCard('Food Pyramid', speechText)
+      .withSimpleCard('indian spices', speechText)
       .addDirective({
           type: 'Alexa.Presentation.APL.RenderDocument',
           document: require('./homepage.json'),       
@@ -29,15 +29,15 @@ const GrainsIntentHandler = {
       && handlerInput.requestEnvelope.request.intent.name === 'GrainsIntent';
   },
   handle(handlerInput) {
-    const speechText = 'These foods provide complex carbohydrates, which are a good source of energy but provide little nutrition.';
+    const speechText = 'Turmeric is a flowering plant of the ginger family, Zingiberaceae, the roots of which are used in cooking.';
 
     return handlerInput.responseBuilder
       .speak(speechText)
       .reprompt(speechText)
-      .withSimpleCard('Grains - Food Pyramid', speechText)
+      .withSimpleCard('Turmeric - Indian spices', speechText)
       .addDirective({
           type: 'Alexa.Presentation.APL.RenderDocument',
-          document: require('./grains.json'),       
+          document: require('./turmeric.json'),       
           datasources: {}
       })
       .getResponse();
