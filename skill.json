@@ -3,14 +3,14 @@
     "publishingInformation": {
       "locales": {
         "en-US": {
-          "summary": "Food Pyramid skill",
+          "summary": "Indian Spices skill",
           "examplePhrases": [
-            "Alexa open food pyramid",
-            "Alexa ask food pyramid about grains",
-            "Alexa ask food pyramid about tier one"
+            "Alexa open indian spices",
+            "Alexa ask indian spices about turmeric",
+            "Alexa start indian spices",
           ],
-          "name": "food pyramid",
-          "description": "A skill to learn about the food pyramid"
+          "name": "indian spices",
+          "description": "A skill to learn about the indian spices"
         }
       },
       "isAvailableWorldwide": true,
